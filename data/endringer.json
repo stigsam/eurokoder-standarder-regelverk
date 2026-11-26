@@ -1,0 +1,209 @@
+[
+{
+"id": "e01",
+"eurokode": "Alle",
+"del": "Alle deler",
+"tema": "Brukervennlighet",
+"endring": "Hovedmålene i EU-mandatet M/515: færre nasjonalt bestemte parametere (NDP) og enklere bruk i det daglige. Det gir kortere nasjonale tillegg.",
+"type": "Forenkling",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e02",
+"eurokode": "EN 1990",
+"del": "EN 1990",
+"tema": "Omfang",
+"endring": "Grunnlagsstandarden dekker nå også geoteknikk: «Grunnlag for prosjektering av konstruksjoner og geoteknikk». Partialfaktormetoden er standardmetoden.",
+"type": "Omstrukturering",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e03",
+"eurokode": "EN 1990",
+"del": "EN 1990",
+"tema": "Pålitelighet",
+"endring": "Fem konsekvensklasser, CC0–CC4, i stedet for tre. De vanlige reglene gjelder CC1–CC3, mens CC4 kan kreve egne pålitelighetskrav.",
+"type": "Ny metode",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e04",
+"eurokode": "EN 1990",
+"del": "EN 1990-2",
+"tema": "Eksisterende konstruksjoner",
+"endring": "Ny del for vurdering og forsterkning av eksisterende konstruksjoner.",
+"type": "Ny del",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e05",
+"eurokode": "EN 1991",
+"del": "EN 1991-1-9",
+"tema": "Islast",
+"endring": "Ny del om atmosfærisk ising på konstruksjoner, blant annet master, tårn og linjer.",
+"type": "Ny del",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e06",
+"eurokode": "EN 1991",
+"del": "EN 1991-1-4",
+"tema": "Vind",
+"endring": "Revidert vinddel (EN 1991-1-4:2026). Hovedteksten er kortet ned og mye stoff flyttet til 13 tillegg. Vindmodellene, kraft- og trykkoeffisientene og metodene for dynamisk respons er gjennomgått. Vindkart er fortsatt nasjonale valg.",
+"type": "Revisjon",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e07",
+"eurokode": "EN 1992",
+"del": "EN 1992-1-1",
+"tema": "Omfang",
+"endring": "Bygninger, bruer og andre anlegg er samlet i én del, i stedet for egne deler for bruer og væsketette konstruksjoner.",
+"type": "Omstrukturering",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e08",
+"eurokode": "EN 1992",
+"del": "EN 1992-1-1",
+"tema": "Skjær og gjennomlokking",
+"endring": "Ny modell basert på teorien om kritisk skjærriss. Kontrollsnittet for gjennomlokking ligger 0,5·dv fra søyleflaten, ikke 2d. Plater og fundamenter behandles likt.",
+"type": "Ny metode",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e09",
+"eurokode": "EN 1992",
+"del": "EN 1992-1-1",
+"tema": "Fiberarmert betong",
+"endring": "Nytt tillegg L med regler for fiberarmert betong, inkludert gjennomlokking.",
+"type": "Nytt innhold",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e10",
+"eurokode": "EN 1992",
+"del": "EN 1992-1-1",
+"tema": "FRP-armering",
+"endring": "Nytt tillegg R for armering av fiberarmert polymer (FRP). FRP skal ikke brukes som skjærarmering mot gjennomlokking.",
+"type": "Nytt innhold",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e11",
+"eurokode": "EN 1993",
+"del": "EN 1993-1-1",
+"tema": "Høyfast stål",
+"endring": "Virkeområdet er utvidet til høyfast stål fra S235 til og med S700. Dette dekket tidligere EN 1993-1-12.",
+"type": "Omstrukturering",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e12",
+"eurokode": "EN 1993",
+"del": "EN 1993-1-13",
+"tema": "Stegåpninger",
+"endring": "Ny del for bjelker med store stegåpninger.",
+"type": "Ny del",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e13",
+"eurokode": "EN 1993",
+"del": "EN 1993-1-14",
+"tema": "Elementmetoden",
+"endring": "Ny del for prosjektering ved hjelp av elementmetoden (FEM).",
+"type": "Ny del",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e14",
+"eurokode": "EN 1995",
+"del": "EN 1995-1-1",
+"tema": "KL-tre og LVL",
+"endring": "Krysslimt tre (KL-tre/CLT) og LVL er regulert fullt ut for første gang.",
+"type": "Nytt innhold",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e15",
+"eurokode": "EN 1995",
+"del": "EN 1995-1-1",
+"tema": "Svingninger i dekker",
+"endring": "Ny og forbedret metode for å kontrollere svingninger i dekker.",
+"type": "Ny metode",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e16",
+"eurokode": "EN 1995",
+"del": "EN 1995-1-1",
+"tema": "Forbindelser og kapasiteter",
+"endring": "Vesentlig reviderte regler for forbindelser, trykk vinkelrett på fiberretningen og skjær.",
+"type": "Revisjon",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e17",
+"eurokode": "EN 1995",
+"del": "EN 1995-1-2",
+"tema": "Brann",
+"endring": "Brannteknisk dimensjonering av trekonstruksjoner er omarbeidet.",
+"type": "Revisjon",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e18",
+"eurokode": "EN 1995",
+"del": "EN 1995-3",
+"tema": "Utførelse",
+"endring": "Ny del med regler for utførelse av trekonstruksjoner.",
+"type": "Ny del",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e19",
+"eurokode": "EN 1997",
+"del": "EN 1997-1/-2/-3",
+"tema": "Struktur",
+"endring": "Delt i tre: generelle regler (1), grunnens egenskaper (2) og en ny del for geotekniske konstruksjoner (3).",
+"type": "Omstrukturering",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e20",
+"eurokode": "EN 1997",
+"del": "EN 1997-1",
+"tema": "Geoteknisk kategori",
+"endring": "Geoteknisk kategori GC1–GC3 bestemmes av konsekvensklasse og geoteknisk kompleksitetsklasse. Kategorien styrer kontrollnivå og krav til å validere den geotekniske prosjekteringsmodellen.",
+"type": "Ny metode",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e21",
+"eurokode": "EN 1998",
+"del": "EN 1998-1-1",
+"tema": "Seismisk påvirkning",
+"endring": "Del 1 er delt i 1-1 (generelle regler og seismisk påvirkning) og 1-2 (bygninger). Jordskjelvfaren angis med spektralakselerasjonene Sα,ref og Sβ,ref, ikke grunnakselerasjon.",
+"type": "Ny metode",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e22",
+"eurokode": "EN 1998",
+"del": "EN 1998-4",
+"tema": "Siloer, tanker og tårn",
+"endring": "Én samlet del for siloer, tanker, rørledninger, tårn, master og piper.",
+"type": "Omstrukturering",
+"grunnlag": "Bekreftet i kilde"
+},
+{
+"id": "e23",
+"eurokode": "EN 1999",
+"del": "EN 1999-1-3",
+"tema": "Utmatting",
+"endring": "Revidert del for aluminiumskonstruksjoner som er utsatt for utmatting.",
+"type": "Revisjon",
+"grunnlag": "Bekreftet i kilde"
+}
+]

@@ -1,0 +1,25 @@
+# Operativsystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editorer
+.vscode/
+.idea/
+.positron/
+*.swp
+*~
+
+# Node/test (ikke nødvendig for siden)
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+.venv/
+
+# Lokale hemmeligheter og miljøfiler skal aldri inn i repoet
+.env
+.env.*
+*.pem
+*.key

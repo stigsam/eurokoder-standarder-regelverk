@@ -1,0 +1,432 @@
+[
+{
+"del": "EN 1990",
+"eurokode": "EN 1990",
+"tittel": "Grunnlag for prosjektering av konstruksjoner og geoteknikk",
+"cen_aar": 2023,
+"sn_aar": 2023,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1990-2",
+"eurokode": "EN 1990",
+"tittel": "Vurdering og forsterkning av eksisterende konstruksjoner",
+"cen_aar": 2026,
+"sn_aar": 2026,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1991-1-1",
+"eurokode": "EN 1991",
+"tittel": "Egenvekt og nyttelaster",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1991-1-2",
+"eurokode": "EN 1991",
+"tittel": "Laster ved brann",
+"cen_aar": 2024,
+"sn_aar": 2024,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1991-1-3",
+"eurokode": "EN 1991",
+"tittel": "Snølaster",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1991-1-4",
+"eurokode": "EN 1991",
+"tittel": "Vindlaster",
+"cen_aar": 2026,
+"sn_aar": 2026,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1991-1-5",
+"eurokode": "EN 1991",
+"tittel": "Termiske påvirkninger",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1991-1-6",
+"eurokode": "EN 1991",
+"tittel": "Laster under utførelse",
+"cen_aar": 2026,
+"sn_aar": 2026,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1991-1-7",
+"eurokode": "EN 1991",
+"tittel": "Ulykkeslaster",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1991-1-9",
+"eurokode": "EN 1991",
+"tittel": "Islast (atmosfærisk ising) – ny del",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1991-2",
+"eurokode": "EN 1991",
+"tittel": "Trafikklast på bruer",
+"cen_aar": 2023,
+"sn_aar": 2023,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1991-3",
+"eurokode": "EN 1991",
+"tittel": "Laster fra kraner og maskiner",
+"cen_aar": 2026,
+"sn_aar": 2026,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1991-4",
+"eurokode": "EN 1991",
+"tittel": "Siloer og tanker",
+"cen_aar": 2026,
+"sn_aar": 2026,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1992-1-1",
+"eurokode": "EN 1992",
+"tittel": "Betong – generelle regler, bygninger og bruer",
+"cen_aar": 2023,
+"sn_aar": 2023,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1992-1-2",
+"eurokode": "EN 1992",
+"tittel": "Betong – brannteknisk dimensjonering",
+"cen_aar": 2023,
+"sn_aar": 2023,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1993-1-1",
+"eurokode": "EN 1993",
+"tittel": "Stål – generelle regler og regler for bygninger",
+"cen_aar": 2022,
+"sn_aar": 2022,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1993-1-2",
+"eurokode": "EN 1993",
+"tittel": "Stål – brannteknisk dimensjonering",
+"cen_aar": 2024,
+"sn_aar": 2024,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1993-1-3",
+"eurokode": "EN 1993",
+"tittel": "Stål – kaldformede profiler og plater",
+"cen_aar": 2024,
+"sn_aar": 2024,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1993-1-5",
+"eurokode": "EN 1993",
+"tittel": "Stål – plater",
+"cen_aar": 2024,
+"sn_aar": 2024,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1993-1-8",
+"eurokode": "EN 1993",
+"tittel": "Stål – knutepunkter",
+"cen_aar": 2024,
+"sn_aar": 2024,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1993-1-9",
+"eurokode": "EN 1993",
+"tittel": "Stål – utmatting",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1993-1-10",
+"eurokode": "EN 1993",
+"tittel": "Stål – materialseighet og egenskaper i tykkelsesretningen",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1993-1-13",
+"eurokode": "EN 1993",
+"tittel": "Stål – bjelker med store stegåpninger (ny del)",
+"cen_aar": 2024,
+"sn_aar": 2024,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1993-1-14",
+"eurokode": "EN 1993",
+"tittel": "Stål – prosjektering med elementmetoden (FEM)",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1993-2",
+"eurokode": "EN 1993",
+"tittel": "Stålbruer",
+"cen_aar": 2026,
+"sn_aar": 2026,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1994-1-1",
+"eurokode": "EN 1994",
+"tittel": "Samvirkekonstruksjoner – generelle regler",
+"cen_aar": 2026,
+"sn_aar": 2026,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1994-2",
+"eurokode": "EN 1994",
+"tittel": "Samvirkebruer",
+"cen_aar": 2026,
+"sn_aar": 2026,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1995-1-1",
+"eurokode": "EN 1995",
+"tittel": "Trekonstruksjoner – generelle regler",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1995-1-2",
+"eurokode": "EN 1995",
+"tittel": "Trekonstruksjoner – brannteknisk dimensjonering",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1995-3",
+"eurokode": "EN 1995",
+"tittel": "Trekonstruksjoner – utførelse (ny del)",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1996-1-1",
+"eurokode": "EN 1996",
+"tittel": "Murkonstruksjoner – generelle regler",
+"cen_aar": 2022,
+"sn_aar": 2022,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1996-1-2",
+"eurokode": "EN 1996",
+"tittel": "Murkonstruksjoner – brannteknisk dimensjonering",
+"cen_aar": 2024,
+"sn_aar": 2024,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1996-3",
+"eurokode": "EN 1996",
+"tittel": "Murkonstruksjoner – forenklede beregningsmetoder",
+"cen_aar": 2023,
+"sn_aar": 2023,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1997-1",
+"eurokode": "EN 1997",
+"tittel": "Geoteknikk – generelle regler",
+"cen_aar": 2024,
+"sn_aar": 2024,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1997-2",
+"eurokode": "EN 1997",
+"tittel": "Geoteknikk – grunnens egenskaper",
+"cen_aar": 2024,
+"sn_aar": 2024,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1997-3",
+"eurokode": "EN 1997",
+"tittel": "Geoteknikk – geotekniske konstruksjoner",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1998-1-1",
+"eurokode": "EN 1998",
+"tittel": "Jordskjelv – generelle regler og seismiske påvirkninger",
+"cen_aar": 2024,
+"sn_aar": 2024,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1998-2",
+"eurokode": "EN 1998",
+"tittel": "Jordskjelv – bruer",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1998-3",
+"eurokode": "EN 1998",
+"tittel": "Jordskjelv – vurdering og forsterkning av bygninger og bruer",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1998-4",
+"eurokode": "EN 1998",
+"tittel": "Jordskjelv – siloer, tanker, rørledninger, tårn, master og piper",
+"cen_aar": 2025,
+"sn_aar": 2025,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1998-5",
+"eurokode": "EN 1998",
+"tittel": "Jordskjelv – geotekniske forhold",
+"cen_aar": 2024,
+"sn_aar": 2024,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1999-1-1",
+"eurokode": "EN 1999",
+"tittel": "Aluminiumskonstruksjoner – generelle regler",
+"cen_aar": 2023,
+"sn_aar": 2023,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+},
+{
+"del": "EN 1999-1-3",
+"eurokode": "EN 1999",
+"tittel": "Aluminium – utmattingsbelastede konstruksjoner",
+"cen_aar": 2023,
+"sn_aar": 2023,
+"status": "SN-EN førstandard",
+"nasjonalt_tillegg": "Under utarbeiding",
+"kilde": "Standard Norge"
+}
+]

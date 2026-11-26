@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eurokoder, standarder og regelverk</title>
+  <meta name="description" content="Oversikt over 2. generasjon eurokoder, endringsblad, milepæler, TEK17, sentrale NS-standarder og Kartverkets standarder.">
+  <meta property="og:title" content="Eurokoder, standarder og regelverk">
+  <meta property="og:description" content="Status for 2. generasjon eurokoder, norsk innføring og annet regelverk for byggingeniører.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main id="dash-root">
+<div class="ek">
+  <header class="ek-head">
+    <h1>Eurokoder, standarder og regelverk</h1>
+    <p><b data-draw="k-sn" data-source="nokkeltall" data-field="verdi" data-where="maal=sn">—</b> av <b data-draw="k-tot" data-source="nokkeltall" data-field="verdi" data-where="maal=totalt">—</b> deler i oversikten er allerede utgitt som norsk førstandard (SN-EN). De nasjonale tilleggene kommer først når hele 2. generasjon publiseres samlet som NS-EN tidlig i 2028, rett før 1. generasjon trekkes tilbake.</p>
+  </header>
+
+  <section class="ek-tiles" aria-label="Nøkkeltall">
+    <div class="ek-card ek-tile">
+      <div class="lbl">Deler i oversikten</div>
+      <span class="num" data-draw="k-tot" data-source="nokkeltall" data-field="verdi" data-where="maal=totalt">—</span>
+      <div class="sub">2. generasjon, EN 1990–1999</div>
+    </div>
+    <div class="ek-card ek-tile">
+      <div class="lbl">Publisert av CEN</div>
+      <span class="num" data-draw="k-cen" data-source="nokkeltall" data-field="verdi" data-where="maal=cen">—</span>
+      <div class="sub">Med kjent utgivelsesår (EN-versjon)</div>
+    </div>
+    <div class="ek-card ek-tile">
+      <div class="lbl">Norsk førstandard (SN-EN)</div>
+      <span class="num" data-draw="k-sn" data-source="nokkeltall" data-field="verdi" data-where="maal=sn">—</span>
+      <div class="sub">Til kjennskap – erstatter ikke gjeldende NS-EN</div>
+    </div>
+    <div class="ek-card ek-tile">
+      <div class="lbl">Nasjonale tillegg (NA) ferdige</div>
+      <span class="num" data-draw="k-na" data-source="nokkeltall" data-field="verdi" data-where="maal=na">—</span>
+      <div class="sub">Utgis samlet med NS-EN tidlig 2028</div>
+    </div>
+    <div class="ek-card ek-tile">
+      <div class="lbl">1. generasjon trekkes tilbake</div>
+      <span class="num" data-draw="k-dow" data-source="frister" data-field="dato_tekst" data-where="id=dow">—</span>
+      <div class="sub" data-draw="k-dager">—</div>
+    </div>
+  </section>
+
+  <div class="ek-grid">
+    <section class="ek-card" id="status-per-eurokode">
+      <h2>Status per eurokode</h2>
+      <p class="ek-note">Antall deler i hver eurokode etter hvor langt de har kommet.</p>
+      <div class="ek-legend" data-draw="legend">—</div>
+      <div class="ek-chart" data-draw="stolper" data-source="per_eurokode"></div>
+    </section>
+
+    <section class="ek-card" id="milepaeler">
+      <h2>Milepæler</h2>
+      <p class="ek-note">Felles europeisk tidsplan og norsk innføring. Uthevet: der vi er nå.</p>
+      <ul class="ek-tl" data-draw="tidslinje" data-source="milepaeler"></ul>
+    </section>
+  </div>
+
+  <section class="ek-card" id="endringer">
+    <h2>Hva endres</h2>
+    <p class="ek-note">De viktigste faglige endringene i 2. generasjon: <b data-draw="e-tot" data-source="endring_oppsummering" data-field="verdi" data-where="maal=totalt">—</b> punkter, hvorav <b data-draw="e-nydel" data-source="endring_oppsummering" data-field="verdi" data-where="maal=nydel">—</b> gjelder nye deler. Alle punktene er kontrollert mot kilder (JRC, Standard Norge og fagartikler) 05.11.2026.</p>
+    <div class="ek-ctrl">
+      <select class="ek-etype" aria-label="Type endring">
+        <option value="">Alle typer endringer</option>
+        <option value="Ny del">Ny del</option>
+        <option value="Ny metode">Ny metode</option>
+        <option value="Nytt innhold">Nytt innhold</option>
+        <option value="Omstrukturering">Omstrukturering</option>
+        <option value="Revisjon">Revisjon</option>
+        <option value="Forenkling">Forenkling</option>
+      </select>
+      <select class="ek-ekode" aria-label="Eurokode for endringer">
+        <option value="">Alle eurokoder</option>
+        <option value="Alle">Gjelder alle</option>
+        <option value="EN 1990">EN 1990 Grunnlag</option>
+        <option value="EN 1991">EN 1991 Laster</option>
+        <option value="EN 1992">EN 1992 Betong</option>
+        <option value="EN 1993">EN 1993 Stål</option>
+        <option value="EN 1995">EN 1995 Tre</option>
+        <option value="EN 1997">EN 1997 Geoteknikk</option>
+        <option value="EN 1998">EN 1998 Jordskjelv</option>
+        <option value="EN 1999">EN 1999 Aluminium</option>
+      </select>
+    </div>
+    <div class="ek-tbox">
+      <table class="ek-table ek-etable" data-source="endringer" data-row-key="id">
+        <thead><tr>
+          <th data-field="del">Del</th>
+          <th data-field="tema">Tema</th>
+          <th data-field="endring">Endring</th>
+          <th data-field="type">Type</th>
+          <th data-field="grunnlag" class="ek-hide">Grunnlag</th>
+        </tr></thead>
+        <tbody data-draw="endringstabell"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="ek-grid">
+    <section class="ek-card" id="endringsblad">
+      <h2>Kommende endringsblad</h2>
+      <p class="ek-note">Rettelser (A1) som allerede er vedtatt eller er på høring. Førstandarden du har, er altså ikke nødvendigvis siste versjon.</p>
+      <div class="ek-tbox">
+        <table class="ek-table" data-source="endringsblad" data-row-key="endringsblad">
+          <thead><tr>
+            <th data-field="endringsblad">Endringsblad</th>
+            <th data-field="status">Status</th>
+            <th data-field="frist" class="ek-hide">Høringsfrist</th>
+            <th data-field="innhold">Innhold</th>
+          </tr></thead>
+          <tbody data-draw="blad"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="ek-card" id="nye-eurokoder">
+      <h2>Nye eurokoder utover EN 1999</h2>
+      <p class="ek-note">Nye materialer på vei inn i eurokodesystemet. En teknisk spesifikasjon (CEN/TS) er et forstadium til en eurokode.</p>
+      <div class="ek-tbox">
+        <table class="ek-table" data-source="nye_eurokoder" data-row-key="dokument">
+          <thead><tr>
+            <th data-field="dokument">Dokument</th>
+            <th data-field="tittel">Tittel</th>
+            <th data-field="status">Status</th>
+            <th data-field="grunnlag" class="ek-hide">Grunnlag</th>
+          </tr></thead>
+          <tbody data-draw="nye"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <section class="ek-card" id="norsk-regelverk">
+    <h2>Norsk regelverk og overgang</h2>
+    <p class="ek-note">Hva som gjelder i prosjekteringen før og etter overgangen.</p>
+    <ul class="ek-list">
+      <li><b>TEK17 § 10-2:</b> Ifølge veiledningen er kravene til konstruksjonssikkerhet oppfylt når prosjekteringen følger eurokodene som Norsk Standard (NS-EN) med nasjonale tillegg. Andre metoder må dokumentere at de gir samme sikkerhet.</li>
+      <li><b>Det som gjelder nå:</b> 1. generasjon NS-EN med nasjonale tillegg. SN-EN-førstandardene er til orientering og erstatter dem ikke.</li>
+      <li><b>Overgangen:</b> Standard Norge gir ut hele 2. generasjon samlet som NS-EN med nasjonale tillegg og trekker 1. generasjon samtidig. Datoene står under Milepæler.</li>
+      <li><b>Veiledningen til TEK17:</b> DiBK oppdaterer den to ganger i året, og henvisningene til standarder kan endres da. Jeg har ikke funnet når DiBK vil henvise til 2. generasjon.</li>
+      <li><b>Blanding av generasjoner:</b> Britisk veiledning (IStructE) fraråder i utgangspunktet å blande 1. og 2. generasjon, men sier det kan gjøres med varsomhet. Jeg har ikke funnet tilsvarende norsk veiledning.</li>
+    </ul>
+  </section>
+
+  <div class="ek-grid">
+    <section class="ek-card" id="andre-standarder">
+      <h2>Andre standarder og regelverk</h2>
+      <p class="ek-note">TEK17 og andre forskrifter, sentrale NS-standarder og Kartverkets standarder for geografisk informasjon. Sammenstilt fra DiBK, KDD, Standard Norge og Geonorge 05.11.2026.</p>
+      <div class="ek-mini">
+        <div class="ek-tile">
+          <div class="lbl">Fulgt i alt</div>
+          <span class="num" data-draw="r-tot" data-source="regelverk_tall" data-field="verdi" data-where="maal=totalt">—</span>
+          <div class="sub">Forskrifter og standarder</div>
+        </div>
+        <div class="ek-tile">
+          <div class="lbl">Ny utgave</div>
+          <span class="num" data-draw="r-ny" data-source="regelverk_tall" data-field="verdi" data-where="maal=ny">—</span>
+          <div class="sub">Utgitt eller vedtatt i 2026</div>
+        </div>
+        <div class="ek-tile">
+          <div class="lbl">Endring på vei</div>
+          <span class="num" data-draw="r-endring" data-source="regelverk_tall" data-field="verdi" data-where="maal=endring">—</span>
+          <div class="sub">På høring, varslet eller under revisjon</div>
+        </div>
+        <div class="ek-tile">
+          <div class="lbl">Tilbaketrukket</div>
+          <span class="num" data-draw="r-tilbake" data-source="regelverk_tall" data-field="verdi" data-where="maal=tilbake">—</span>
+          <div class="sub">Står fortsatt i oversikten</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ek-card" id="regelverk-tidslinje">
+      <h2>Siste og neste endringer</h2>
+      <p class="ek-note">Endringer det siste året og varslede frister fremover. Uthevet: neste frist.</p>
+      <ul class="ek-tl" data-draw="r-tidslinje" data-source="regelverk"></ul>
+    </section>
+  </div>
+
+  <section class="ek-card" id="regelverk-oversikt">
+    <h2>Alt som følges utenom eurokodene</h2>
+    <p class="ek-note">Grunnlag i varselfarge betyr at kilden er eldre enn 2026, så statusen bør sjekkes.</p>
+    <div class="ek-ctrl">
+      <select class="ek-romr" aria-label="Område">
+        <option value="">Alle områder</option>
+        <option value="TEK17 og forskrifter">TEK17 og forskrifter</option>
+        <option value="NS-standarder">NS-standarder</option>
+        <option value="Kartverket / SOSI">Kartverket / SOSI</option>
+      </select>
+      <select class="ek-rstatus" aria-label="Status">
+        <option value="">Alle statuser</option>
+        <option value="Ny utgave">Ny utgave</option>
+        <option value="Høring avsluttet">Høring avsluttet</option>
+        <option value="Varslet høring">Varslet høring</option>
+        <option value="Under revisjon">Under revisjon</option>
+        <option value="Gjeldende">Gjeldende</option>
+        <option value="Tilbaketrukket">Tilbaketrukket</option>
+      </select>
+      <input class="ek-rsok" type="search" placeholder="Søk i dokument, tittel eller endring" aria-label="Søk i regelverk">
+    </div>
+    <div class="ek-tbox">
+      <table class="ek-table" data-source="regelverk" data-row-key="id">
+        <thead><tr>
+          <th data-field="dokument">Dokument</th>
+          <th data-field="tittel">Tittel</th>
+          <th data-field="status">Status</th>
+          <th data-field="neste">Hva skjer</th>
+          <th data-field="gjeldende" class="ek-hide">Gjeldende</th>
+          <th data-field="dato" class="ek-hide">Dato</th>
+          <th data-field="grunnlag" class="ek-hide">Grunnlag</th>
+          <th data-field="kilde" class="ek-hide">Kilde</th>
+        </tr></thead>
+        <tbody data-draw="r-tabell"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="ek-card" id="alle-deler">
+    <h2>Alle deler</h2>
+    <p class="ek-note">Alle deler er kontrollert mot Standard Norges katalog (online.standard.no) 05.11.2026. CEN-år er satt lik året i SN-EN-betegnelsen.</p>
+    <div class="ek-ctrl">
+      <select class="ek-filter" aria-label="Eurokode">
+        <option value="">Alle eurokoder</option>
+        <option value="EN 1990">EN 1990 Grunnlag</option>
+        <option value="EN 1991">EN 1991 Laster</option>
+        <option value="EN 1992">EN 1992 Betong</option>
+        <option value="EN 1993">EN 1993 Stål</option>
+        <option value="EN 1994">EN 1994 Samvirke</option>
+        <option value="EN 1995">EN 1995 Tre</option>
+        <option value="EN 1996">EN 1996 Mur</option>
+        <option value="EN 1997">EN 1997 Geoteknikk</option>
+        <option value="EN 1998">EN 1998 Jordskjelv</option>
+        <option value="EN 1999">EN 1999 Aluminium</option>
+      </select>
+      <input class="ek-search" type="search" placeholder="Søk i del eller tittel" aria-label="Søk">
+    </div>
+    <div class="ek-tbox">
+      <table class="ek-table" data-source="deler" data-row-key="del">
+        <thead><tr>
+          <th data-field="del">Del</th>
+          <th data-field="tittel">Tittel</th>
+          <th data-field="status">Status</th>
+          <th data-field="cen_aar" class="ek-hide">CEN-år</th>
+          <th data-field="sn_aar" class="ek-hide">SN-EN-år</th>
+          <th data-field="nasjonalt_tillegg" class="ek-hide">Nasjonalt tillegg</th>
+          <th data-field="kilde" class="ek-hide">Kilde</th>
+        </tr></thead>
+        <tbody data-draw="tabell"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Ny i den selvstendige versjonen: erstatter Claude-panelet «Sources». -->
+  <section class="ek-card ek-kilder" id="kilder">
+    <details>
+      <summary>Kilder og datagrunnlag</summary>
+      <ul class="ek-list" data-draw="kilder"></ul>
+    </details>
+  </section>
+</div>
+</main>
+
+<noscript><p style="padding:1rem">Denne siden trenger JavaScript for å vise tallene og tabellene.</p></noscript>
+
+<script src="assets/js/vendor/d3.min.js"></script>
+<script src="assets/js/dash.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

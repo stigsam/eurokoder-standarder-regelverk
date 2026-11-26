@@ -1,0 +1,65 @@
+[
+{
+"id": "m515",
+"dato": "2012-12-01",
+"hendelse": "EU-mandat M/515 for 2. generasjon eurokoder",
+"aktor": "EU/CEN",
+"presisjon": "Omtrentlig"
+},
+{
+"id": "en1993",
+"dato": "2022-07-01",
+"hendelse": "EN 1993-1-1:2022 – første del publisert",
+"aktor": "EU/CEN",
+"presisjon": "Omtrentlig"
+},
+{
+"id": "en1990",
+"dato": "2023-09-01",
+"hendelse": "EN 1990:2023 publisert",
+"aktor": "EU/CEN",
+"presisjon": "Omtrentlig"
+},
+{
+"id": "sn",
+"dato": "2022-11-01",
+"hendelse": "Første SN-EN førstandard utgitt i Norge (SN-EN 1993-1-1:2022)",
+"aktor": "Norge",
+"presisjon": "Omtrentlig"
+},
+{
+"id": "votes",
+"dato": "2025-12-31",
+"hendelse": "Formelle avstemminger avsluttet for alle deler",
+"aktor": "EU/CEN",
+"presisjon": "Omtrentlig"
+},
+{
+"id": "dist",
+"dato": "2026-03-30",
+"hendelse": "Frist for CENs distribusjon til nasjonale standardiseringsorganer",
+"aktor": "EU/CEN",
+"presisjon": "Eksakt"
+},
+{
+"id": "dop",
+"dato": "2027-09-30",
+"hendelse": "Felles publiseringsdato (DoP) for alle deler",
+"aktor": "EU/CEN",
+"presisjon": "Eksakt"
+},
+{
+"id": "ns",
+"dato": "2028-01-15",
+"hendelse": "NS-EN med nasjonale tillegg publiseres samlet",
+"aktor": "Norge",
+"presisjon": "Omtrentlig"
+},
+{
+"id": "dow",
+"dato": "2028-03-30",
+"hendelse": "1. generasjon trekkes tilbake (DoW)",
+"aktor": "EU/CEN",
+"presisjon": "Eksakt"
+}
+]

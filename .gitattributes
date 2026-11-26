@@ -1,0 +1,4 @@
+# Normaliser tekstfiler, men la datafilene ligge byte for byte som de er
+* text=auto
+data/*.json -text
+assets/js/vendor/* -text
