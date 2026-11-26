@@ -359,23 +359,45 @@ dash.draw('r-tabell', (el) => {
 });
 }
 
-/* ---------- Tillegg i den selvstendige versjonen: kildeliste ----------
- * Erstatter Claude-panelet «Sources», som viste hvor tallene kommer fra. */
+/* ---------- Tillegg i den selvstendige versjonen ----------
+ * «Sist kontrollert» under ingressen, og kildelisten som erstatter
+ * Claude-panelet «Sources». Begge leser data/meta.json. */
 {
 const fmtDato = (s) => s.slice(8, 10) + '.' + s.slice(5, 7) + '.' + s.slice(0, 4);
+
+dash.draw('sist-kontrollert', (el) => {
+  const r = dash.data('meta');
+  el.classList.toggle('dash-skeleton', r.status === 'loading');
+  el.classList.remove('ek-stale');
+  if (r.status !== 'ok' || !r.data.sist_kontrollert) { el.textContent = r.status === 'loading' ? '' : 'Kontrolldato mangler.'; return; }
+  const dato = r.data.sist_kontrollert;
+  const dager = Math.floor((new Date() - new Date(dato + 'T00:00:00')) / 864e5);
+  const grense = r.data.foreldet_etter_dager || 90;
+  const siden = dager <= 0 ? 'i dag' : dager === 1 ? 'for 1 dag siden' : 'for ' + ekFmt(dager) + ' dager siden';
+  el.textContent = 'Sist kontrollert mot kildene ' + fmtDato(dato) + ' (' + siden + ').';
+  if (dager > grense) {
+    el.classList.add('ek-stale');
+    el.append(' Dataene er eldre enn ' + ekFmt(grense) + ' dager, så statusene kan ha endret seg. Sjekk gjeldende utgave hos Standard Norge, DiBK og Geonorge.');
+  }
+});
+
 dash.draw('kilder', (el) => {
   el.replaceChildren();
+  const m = dash.data('meta');
+  const meta = m.status === 'ok' ? (m.data.kilder || {}) : {};
   Object.keys(dash.datasets).forEach((id) => {
     const ds = dash.datasets[id];
+    const k = meta[id] || {};
     const r = dash.data(id);
     const li = document.createElement('li');
-    const b = document.createElement('b'); b.textContent = ds.title;
+    const b = document.createElement('b'); b.textContent = k.tittel || id;
     const a = document.createElement('a'); a.href = ds.file; a.textContent = ds.file.split('/').pop();
     const n = r.status === 'ok' ? ', ' + ekFmt(r.data.length) + ' rader' : '';
-    const meta = document.createElement('span'); meta.className = 'ek-kmeta';
-    meta.append(' (', a, n + ', oppdatert ' + fmtDato(ds.updated) + ' av ' + ds.by + ')');
-    const p = document.createElement('div'); p.className = 'ek-kdesc'; p.textContent = ds.description;
-    li.append(b, meta, p);
+    const opp = k.oppdatert ? ', oppdatert ' + fmtDato(k.oppdatert) + (k.av ? ' av ' + k.av : '') : '';
+    const metaEl = document.createElement('span'); metaEl.className = 'ek-kmeta';
+    metaEl.append(' (', a, n + opp + ')');
+    const p = document.createElement('div'); p.className = 'ek-kdesc'; p.textContent = k.beskrivelse || '';
+    li.append(b, metaEl, p);
     el.append(li);
   });
 });

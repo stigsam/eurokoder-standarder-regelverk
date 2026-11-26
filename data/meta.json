@@ -1,0 +1,45 @@
+{
+  "sist_kontrollert": "2026-11-05",
+  "foreldet_etter_dager": 90,
+  "kilder": {
+    "deler": {
+      "tittel": "Eurokode-deler, 2. generasjon",
+      "beskrivelse": "Deler av 2. generasjons eurokoder med CEN-år, norsk førstandard (SN-EN) og status for nasjonalt tillegg. Alle 43 deler er kontrollert mot Standard Norges katalog (online.standard.no) 05.11.2026.",
+      "oppdatert": "2026-11-05",
+      "av": "Claude (kontrollert mot online.standard.no)"
+    },
+    "endringer": {
+      "tittel": "Hovedendringer i 2. generasjon",
+      "beskrivelse": "De viktigste faglige endringene per eurokode, sammenstilt av Claude og kontrollert mot JRC, Standard Norge og fagartikler 05.11.2026.",
+      "oppdatert": "2026-11-05",
+      "av": "Claude (kontrollert mot kilder)"
+    },
+    "endringsblad": {
+      "tittel": "Kommende endringsblad (A1)",
+      "beskrivelse": "Endringsblad til 2. generasjons deler som er vedtatt eller på høring, sammenstilt av Claude fra CEN-kataloger, SIS og Standard Norge per november 2026.",
+      "oppdatert": "2026-11-05",
+      "av": "Claude (sammenstilt)"
+    },
+    "milepaeler": {
+      "tittel": "Milepæler for innføring",
+      "beskrivelse": "Felles CEN-frister (DoP 30.09.2027, DoW 30.03.2028) og Standard Norges plan om samlet NS-EN med nasjonale tillegg tidlig 2028; datoer merket omtrentlig er anslått til måned.",
+      "oppdatert": "2026-11-05",
+      "av": "Claude"
+    },
+    "nye_eurokoder": {
+      "tittel": "Nye eurokoder og CEN/TS",
+      "beskrivelse": "Status for glass (EN 19100), FRP (CEN/TS 19101), membraner (CEN/TS 19102) og tre–betong-samvirke (CEN/TS 19103), sammenstilt av Claude per november 2026.",
+      "oppdatert": "2026-11-05",
+      "av": "Claude (sammenstilt)"
+    },
+    "regelverk": {
+      "tittel": "Andre standarder og regelverk",
+      "beskrivelse": "TEK17 og forskrifter, sentrale NS-standarder og Kartverkets standarder for geografisk informasjon, sammenstilt av Claude fra DiBK, KDD, Standard Norge og Geonorge 05.11.2026.",
+      "oppdatert": "2026-11-05",
+      "av": "Claude (sammenstilt fra kilder)"
+    }
+  },
+  "logg": [
+    {"dato": "2026-11-05", "endring": "Første versjon, kontrollert mot Standard Norge, DiBK, KDD, JRC og Geonorge."}
+  ]
+}

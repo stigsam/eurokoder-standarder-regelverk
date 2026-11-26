@@ -184,6 +184,8 @@ span.dash-skeleton, b.dash-skeleton { display: inline-block; min-width: 2ch; }
 .ek-kilder .ek-list { margin-top: var(--cds-gap-md); }
 .ek-kmeta, .ek-kdesc { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
 .ek-kdesc { margin-top: 2px; }
+.ek-head p.ek-checked { margin-top: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); min-height: 1.2em; }
+.ek-head p.ek-checked.ek-stale { color: var(--color-warn); font-weight: var(--cds-font-weight-medium); }
 
 @media print {
   body { background: #fff; }

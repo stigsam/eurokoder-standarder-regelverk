@@ -9,7 +9,7 @@ En statisk nettside som gir oversikt over 2. generasjon eurokoder og annet regel
 
 Siden er ren HTML, CSS og JavaScript. Den har ingen byggesteg, ingen tjenerkode og ingen eksterne avhengigheter ved kjøring (d3 ligger lokalt i prosjektet). Dataene ligger som JSON-filer i `data/`.
 
-Datagrunnlaget ble sist kontrollert 05.11.2026. Statusene endrer seg, så sjekk alltid gjeldende utgave hos Standard Norge, DiBK og Geonorge før bruk i prosjektering.
+Datoen for siste kontroll står under ingressen på siden. Er dataene eldre enn 90 dager, vises en advarsel i varselfarge. Statusene endrer seg, så sjekk alltid gjeldende utgave hos Standard Norge, DiBK og Geonorge før bruk i prosjektering.
 
 ## Kjøre lokalt
 
@@ -40,12 +40,34 @@ data/
   milepaeler.json          Milepæler for innføring
   nye_eurokoder.json       Nye eurokoder og CEN/TS
   regelverk.json           Andre standarder og regelverk
+  meta.json                Dato for siste kontroll, kildebeskrivelser og endringslogg
+verktoy/
+  sjekk_data.py            Kontrollerer datafilene før publisering
 .nojekyll                  Ber GitHub Pages servere filene som de er
 ```
 
 ### Oppdatere data
 
-Rediger JSON-filene i `data/` og publiser på nytt (commit og push). Tall, diagrammer og tabeller beregnes fra filene hver gang siden åpnes. Titler, beskrivelser og oppdateringsdato for hver datakilde, som vises under «Kilder og datagrunnlag», ligger øverst i `assets/js/dash.js`.
+All oppdatering av innholdet skjer i `data/`:
+
+1. Rett JSON-filene som har endret seg.
+2. I `data/meta.json`: sett `sist_kontrollert` til dagens dato (ÅÅÅÅ-MM-DD), oppdater `oppdatert` og eventuelt `beskrivelse` for kildene som er kontrollert, og legg en linje i `logg`.
+3. Kjør kontrollen, som stopper feil feltnavn, ukjente statusverdier og ugyldige datoer:
+   ```bash
+   python verktoy/sjekk_data.py
+   ```
+4. Commit og push. GitHub Pages oppdaterer siden i løpet av et par minutter.
+
+Statusverdiene må være nøyaktig de samme som filtrene og fargene på siden bruker (for eksempel «Høring avsluttet», «Varslet høring»). Trengs en ny verdi, må den også legges inn i `index.html`, `assets/js/app.js` og `verktoy/sjekk_data.py`.
+
+### Månedlig kontroll
+
+En planlagt oppgave i Claude går gjennom kildene (Standard Norge, CEN, DiBK, KDD og Geonorge) en gang i måneden, oppdaterer filene i `data/`, kjører kontrollen og leverer endringene som en patch med en oversikt over hva som er endret. Patchen legges inn slik:
+
+```bash
+git am <filnavn>.patch
+git push
+```
 
 ## Publisere med GitHub Pages
 

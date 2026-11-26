@@ -10,6 +10,7 @@
  *   dash.draw(navn, fn) registrerer, dash.draw(navn) tegner på nytt
  *   dash.onData(fn)
  *   dash.colors        seriefarger (CSS-variabler)
+ *   dash.data('meta')  innholdet i data/meta.json (kontrolldato og kildebeskrivelser)
  */
 (function () {
   'use strict';
@@ -23,45 +24,17 @@
     };
   }
 
-  // Datakildene. Titler, beskrivelser og datoer er hentet uendret fra artifacten.
+  // Datakildene. Titler, beskrivelser og kontrolldatoer ligger i data/meta.json,
+  // slik at all oppdatering av innholdet skjer i data/-mappen.
   var DATASETS = {
-    deler: {
-      file: 'data/deler.json',
-      title: 'Eurokode-deler, 2. generasjon',
-      description: 'Deler av 2. generasjons eurokoder med CEN-år, norsk førstandard (SN-EN) og status for nasjonalt tillegg. Alle 43 deler er kontrollert mot Standard Norges katalog (online.standard.no) 05.11.2026.',
-      updated: '2026-11-05', by: 'Claude (kontrollert mot online.standard.no)'
-    },
-    endringer: {
-      file: 'data/endringer.json',
-      title: 'Hovedendringer i 2. generasjon',
-      description: 'De viktigste faglige endringene per eurokode, sammenstilt av Claude og kontrollert mot JRC, Standard Norge og fagartikler 05.11.2026.',
-      updated: '2026-11-05', by: 'Claude (kontrollert mot kilder)'
-    },
-    endringsblad: {
-      file: 'data/endringsblad.json',
-      title: 'Kommende endringsblad (A1)',
-      description: 'Endringsblad til 2. generasjons deler som er vedtatt eller på høring, sammenstilt av Claude fra CEN-kataloger, SIS og Standard Norge per november 2026.',
-      updated: '2026-11-05', by: 'Claude (sammenstilt)'
-    },
-    milepaeler: {
-      file: 'data/milepaeler.json',
-      title: 'Milepæler for innføring',
-      description: 'Felles CEN-frister (DoP 30.09.2027, DoW 30.03.2028) og Standard Norges plan om samlet NS-EN med nasjonale tillegg tidlig 2028; datoer merket omtrentlig er anslått til måned.',
-      updated: '2026-11-05', by: 'Claude'
-    },
-    nye_eurokoder: {
-      file: 'data/nye_eurokoder.json',
-      title: 'Nye eurokoder og CEN/TS',
-      description: 'Status for glass (EN 19100), FRP (CEN/TS 19101), membraner (CEN/TS 19102) og tre–betong-samvirke (CEN/TS 19103), sammenstilt av Claude per november 2026.',
-      updated: '2026-11-05', by: 'Claude (sammenstilt)'
-    },
-    regelverk: {
-      file: 'data/regelverk.json',
-      title: 'Andre standarder og regelverk',
-      description: 'TEK17 og forskrifter, sentrale NS-standarder og Kartverkets standarder for geografisk informasjon, sammenstilt av Claude fra DiBK, KDD, Standard Norge og Geonorge 05.11.2026.',
-      updated: '2026-11-05', by: 'Claude (sammenstilt fra kilder)'
-    }
+    deler: { file: 'data/deler.json' },
+    endringer: { file: 'data/endringer.json' },
+    endringsblad: { file: 'data/endringsblad.json' },
+    milepaeler: { file: 'data/milepaeler.json' },
+    nye_eurokoder: { file: 'data/nye_eurokoder.json' },
+    regelverk: { file: 'data/regelverk.json' }
   };
+  var META_FILE = 'data/meta.json';
 
   var state = {};      // id -> {status, data, message}
   var calcs = {};      // id -> {inputs, fn, title, description}
@@ -70,6 +43,7 @@
   Object.keys(DATASETS).forEach(function (id) {
     state[id] = { status: 'loading', data: [], message: '' };
   });
+  state.meta = { status: 'loading', data: null, message: '' };
 
   function data(id) {
     if (state[id]) return state[id];
@@ -130,15 +104,18 @@
 
   // Last alle datafilene (relative stier, fungerer både lokalt og på GitHub Pages).
   function load() {
-    Object.keys(DATASETS).forEach(function (id) {
-      fetch(DATASETS[id].file, { cache: 'no-cache' })
+    var files = {};
+    Object.keys(DATASETS).forEach(function (id) { files[id] = DATASETS[id].file; });
+    files.meta = META_FILE;
+    Object.keys(files).forEach(function (id) {
+      fetch(files[id], { cache: 'no-cache' })
         .then(function (r) {
-          if (!r.ok) throw new Error('HTTP ' + r.status + ' for ' + DATASETS[id].file);
+          if (!r.ok) throw new Error('HTTP ' + r.status + ' for ' + files[id]);
           return r.json();
         })
         .then(function (rows) {
           state[id] = { status: 'ok', data: rows, message: '' };
-          state[id].data.columns = rows.length ? Object.keys(rows[0]) : [];
+          if (Array.isArray(rows)) state[id].data.columns = rows.length ? Object.keys(rows[0]) : [];
         })
         .catch(function (e) {
           console.error('[dash] ' + id + ':', e);
